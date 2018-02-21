@@ -1,0 +1,527 @@
+/* sets default margin and padding to 0 so there won't  be weird empty space*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Fonts and styles across multiple pages */
+@font-face {
+    font-family:"Lobster Two";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face{
+  font-family:"Domine";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+h1{
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+body{
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+
+h1{
+  font-size: 48px;
+}
+
+h2{
+  font-size: 26px;
+}
+
+/*styles the Cornell Banner*/
+#banner{
+  width: 100%;
+  background-color: #ab0f23;
+}
+
+#mobile_navbar{
+  display: none;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-size: 17px;
+}
+
+.camplogo {
+  height: 82px;
+  float: left;
+  margin-right: 5px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float:left;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 30px 65px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  float:none;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  color: white;
+  margin-top: 0px;
+  padding: 30px 70px;
+  background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #0f82a9;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #0f82a9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#gala1{
+  border-top: 1px solid white;
+}
+
+#caret{
+  font-size: 12px;
+}
+
+.highlighted{
+  background-color: #0f82a9;
+}
+
+
+/*Members Page*/
+.membersflex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: auto;
+}
+.memberinfo{
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.memberimage{
+  margin-top: 30px;
+  margin-left: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+/*Home Page */
+.mission {
+  padding: 3% 20%;
+  text-align: justify;
+}
+
+/*About Page */
+
+#history, #objective{
+  padding-top: 1%;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+#clubHistory{
+  padding-top: 50px;
+}
+
+#history{
+  text-align: justify;
+}
+#icons img{
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  transform: skewX(5deg);
+  transform: skewY(10deg);
+}
+
+#icons img:hover {
+  cursor: pointer;
+  background-color: #0fa9a9;
+}
+
+#icons .selected{
+  background-color: #0fa9a9;
+  transform: skewX(10deg);
+  transform: skewY(5deg);
+}
+
+
+/*Event Page*/
+iframe{
+  margin-top: 20px;
+  border: 0;
+  width:800px;
+  height:600px;
+}
+
+
+/*Gallery Pages*/
+.gallery{
+  text-align: center;
+}
+
+.gallery img{
+  width: 40%;
+  padding: 10px;
+}
+
+#hungerGallery img{
+  width: 30%;
+  padding: 10px;
+}
+
+.gallery a{
+  text-decoration: none;
+}
+
+/* Application Page */
+.showHideLabel{
+  border: solid 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-right: 20px;
+  width:50%;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom:5px;
+  height:32px;
+  background: #BC1616;
+  display: inline-block;
+}
+
+.showHideLabel h2{
+  display: inline-block;
+  color: white;
+}
+.caret{
+  display: inline-block;
+  float: right;
+}
+
+.showHideLabel:hover{
+  cursor:pointer;
+}
+
+#appLink{
+  margin: auto;
+  border: solid 1px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width:50%;
+  min-width: 250px;
+  padding-top: 40px;
+  padding-right: 20px;
+  height:80px;
+  margin-bottom: 50px;
+}
+
+#formIcon{
+    width:30px;
+}
+
+#commentForm{
+  text-align: left;
+  margin: auto;
+  border: solid 1px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width:50%;
+  min-width: 250px;
+  margin-bottom: 50px;
+
+}
+
+#commentForm label{
+  padding-top: 20px;
+  padding-bottom: 3px;
+  display: block;
+}
+
+input, select{
+  font: 1em;
+  height: 30px;
+  padding-left: 8px;
+  width: 40%;
+  display: inline;
+  border: 1px solid  #ccc;
+}
+
+textarea {
+  border: 1px solid  #ccc;
+  padding-left: 8px;
+  padding-top: 8px;
+  font: 1em;
+  width: 50%;
+  height: 175px;
+}
+
+.status{
+  width: auto;
+  margin-left: 20px;
+}
+
+.asterisk, .errorMessage{
+  color: red;
+}
+
+.hiddenError{
+  display: none;
+}
+
+#submitButton{
+  display: block;
+  margin-top: 3%;
+  color: white;
+  background-color: #BC1616;
+
+}
+
+/* For submitted.php */
+#submittedText{
+  padding-top: 20px;
+  padding-bottom:600px;
+}
+/* Footer Styles */
+
+footer{
+  padding-top: 20px;
+  margin-top: 20px;
+  width:100%;
+  height:40px;
+  background:#ab0f23;
+}
+
+footer span{
+    color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#giraffeLink{
+    color: white;
+    text-decoration:none;
+}
+
+#facebookLogo{
+  margin-top: -10px;
+  background-color: white;
+  margin-right: 20px;
+  border-radius: 5px;
+  float: right;
+}
+
+/*centers the navbar and the page content */
+.container {
+  text-align: center;
+}
+
+textarea#comment {
+  width: 95%;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+
+  #main {margin-left:216px;}
+
+  .navbar a {
+    font-size: 11px;
+    padding: 2%;
+    margin-left: 3%;
+  }
+
+  #mobile_navbar {
+    display:block;
+  }
+
+  .shared{
+    margin-right: 4%;
+  }
+
+  .camplogo{
+    display: none;
+  }
+
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  #homePagep {
+    margin-top: 18%;
+  }
+
+  .mission {
+    padding: 3% 10%;
+    text-align: justify;
+  }
+
+  .membersflex{
+    display: block;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+
+  .memberinfo{
+    margin-left: 2%;
+    margin-right: 10px;
+    width: auto;
+  }
+
+
+  #icons img{
+    width: 80px;
+    height: 80px;
+  }
+  #history, #objective{
+    padding-top: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: justify;
+  }
+
+
+  #iframe{
+    margin-top:3%;
+    width: 90%;
+  }
+  textarea {
+    border: 1px solid black;
+    height: 90px;
+    width: 70%;
+  }
+  h1 {
+    font-size: 33px;
+}
+  .showHideLabel {
+    font-size: 14px;
+    height: 30px;
+    width: 85%;
+  }
+
+  #appLink{
+    width: 85%;
+  }
+
+  #commentForm{
+    width: 85%;
+  }
+
+  input, select{
+    height: 25px;
+    width: 60%;
+  }
+
+  textarea {
+    width: 90%;
+    height: 200px;
+    border: 1px solid  #ccc;
+  }
+
+  .gallery h1{
+    padding-right: 5px;
+    padding-left: 5px;
+
+  }
+  .gallery img{
+    width: 95%;
+  }
+
+  .gallery a{
+    cursor: default;
+  }
+
+  #hungerGallery img{
+    width: 95%;
+    margin-right: 0px;
+  }
+
+  .memberimage{
+    height: 200px;
+    width: 200px;
+    margin-left: 2%;
+  }
+}
